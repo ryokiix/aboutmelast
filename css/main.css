@@ -101,10 +101,9 @@ li a:hover {
 }
 
 .toppicture {
-    margin-left: auto;
-    margin-right: auto;
-    width: 750px;
-    height: 300px;
+    margin-left: 50px;
+    width: 40%;
+    height: 20%;
     border-radius: 10px;
 }
 
@@ -213,7 +212,13 @@ li a:hover {
 
 .image-container {
     position: relative;
-    display: inline-block;
+    display: flex;
+    max-width: 95%;
+    max-height: 95vh;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .default-image {
@@ -228,8 +233,8 @@ li a:hover {
     top: 0;
     left: 0;
     opacity: 0;
-    width: 100%;
-    height: 100vh;
+    width: 95%;
+    height: 95vh;
     border-radius: 10px;
     transition: opacity 0.3s ease;
 }

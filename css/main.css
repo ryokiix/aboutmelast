@@ -101,7 +101,8 @@ li a:hover {
 }
 
 .toppicture {
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     width: 750px;
     height: 300px;
     border-radius: 10px;
@@ -175,6 +176,8 @@ li a:hover {
 
  .picture-container {
     margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2%; 

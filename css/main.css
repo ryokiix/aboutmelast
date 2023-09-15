@@ -1,0 +1,245 @@
+html, body {
+    width: 100%;
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden;
+  }
+
+/* 1st Section or landing page */
+
+.landing {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/image4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.landing p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(48, 40, 40);
+    font-size: 30px;
+    font-family: League Spartan;
+}
+
+.center-box {
+    
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vh;
+    height: 30vh;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Calibri Light;
+    font-weight: Bold;
+    font-size: 25px;   
+  }
+  
+li a:hover {
+      color: #000000;
+  }
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px; 
+}
+
+.icon-wrapper {
+    background-color: white; 
+    border-radius: 10px;
+    margin: 10 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.icon {
+    
+    width: 32px;
+    height: 32px;
+    margin: 10 10px;
+    filter: grayscale(100%); 
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 600px; 
+    margin: auto;
+}
+
+.toppicture {
+    margin-left: 50px;
+    width: 750px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* 2nd section */
+
+ .info {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/image2.jpg);
+    background-blend-mode: darken(200);
+    padding: 100px 0px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.container {
+    max-width: 600px;
+    margin-left: 30px;
+    background-color:#faf0e6;
+    padding: 10px;
+    border-radius: 10px;
+    border:#000000;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.tweets {
+    margin-top: 20px;
+}
+
+.tweet {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.tweet p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+ .picture-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+}
+
+
+.picture-box {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    text-align: center; 
+}
+
+
+.picture {
+    width: 100%; 
+    height: auto;
+}
+
+/* Contribution Page */
+ 
+.contributions1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/image3.jpg);
+    background-blend-mode: darken(200);
+    padding: 100px 0px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.default-image {
+    width: 100%;
+    height: 100vh;
+    margin-left: 8%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    margin-left: 8%;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .default-image {
+    transform: scale(1.1);
+    opacity: 0; 
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+}
+
+
